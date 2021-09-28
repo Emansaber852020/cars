@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="style-vehical.css">
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:wght@400&family=Poppins:wght@700&display=swap');
+	</style>
+	<script>
+		// window.onload=function(){
+		// 	document.getElementsByClassName("active").style.color="red"
+				
+		// 		}
+	</script>
+</head>
+<body>
+	
+
+     <div class="section-gallery p-t-118 p-b-100 ms-5 mt-5" onload="myFunction()">
+		
+
+		<div class="wrap-label-gallery filter-tope-group size27 flex-w flex-sb-m m-l-r-auto flex-col-c-sm p-l-15 p-r-15 m-b-60">
+			<button class="label-gallery  txt26 trans-0-4 active"  data-car="all">
+				All VEHICLES
+			</button>
+
+			<button class="label-gallery txt26 trans-0-4" data-car="passenger">
+				PASSENGER VEHICLES
+			</button>
+
+			<button class="label-gallery txt26 trans-0-4" data-car="suv" >
+				SUVS&CROSSOVERS
+			</button>
+
+			<button class="label-gallery txt26 trans-0-4" data-car="commercial" >
+				COMMERCIAL VEHICLES 
+			</button>
+
+			
+		</div>
+		</div>
+		
+
+		
+
+		
+<div id="container" class="container-xl ms-3">
+<div class="row"> 
+ <div class="col text-center col-sm-3 vehical all passenger">
+ <div class="img" style="background-image: url('car-image/Sunny.jpg.ximg.l_3_m.smart.jpg')"></div>
+ <h1> sunny</h1>
+<p>starting from egp<br>
+	z263,000*
+</p>
+  </div> 
+	  <div  class="all passenger col text-center col-sm-3 ">
+	<div ><div  class="img" style="background-image:url('car-image/Sentra-old.jpg.ximg.l_3_m.smart.jpg')" ></div>
+		<h1> sentra</h1>
+		<p>starting from egp 292,500*</p>
+	</div> 
+   </div>
+   
+   <div class="col text-center col-sm-3 all passenger">
+	   <div ><div class="img" style="background-image: url('car-image/side-new.jpg.ximg.l_3_m.smart.jpg')"></div>
+		<h1> sentra premium</h1>
+		<p>starting from egp 326,400*</p>
+	</div>
+   </div>
+   <div class="col text-center col-sm-3 all suv">
+	<div ><div class="img" style="background-image:url('car-image/Juke-21.jpg.ximg.l_3_m.smart.jpg')" ></div>
+		<h1> juke</h1>
+		<p>starting from egp 357,500*</p>
+	</div>
+   </div>
+   <div   id="01" class=" part1	col text-center col-sm-3 all suv all commercial">
+	<div ><div class="img" style="background-image:url('car-image/Patrol-2020.jpg.ximg.l_3_m.smart.jpg')" ></div>
+		<h1> patrol</h1>
+		<p>starting from egp 3,500,000*</p>
+	</div>
+   </div>
+   <div class="col text-center col-sm-3 all commercial">
+	<div ><div class="img" style="background-image:url('car-image/pickup-eg.jpg.ximg.l_3_m.smart.jpg');" ></div>
+		<h1>pickup single<br> cabin</h1>
+		<p>starting from egp 263,000*</p>
+	</div>
+   </div>
+   <div class="col text-center col-sm-3 all commercial">
+	<div ><div class="img" style="background-image:url('car-image/Urvan2.jpg.ximg.l_3_m.smart.jpg')" ></div>
+		<h1> urvan</h1>
+		<p>starting from egp 655,000*</p>
+	</div>
+   </div>
+   </div>
+</div> 
+
+   <script>
+	 
+	 
+
+
+function myFunction() {
+  document.getElementById("active").style.color="red";
+}
+	var myLinks = document.querySelectorAll(".label-gallery");
+	var pics = document.querySelectorAll(".all");
+
+	for(var i=0; i<myLinks.length; i++){
+		myLinks[i].onclick = function(e){
+			e.preventDefault();
+			// console.log(this.getAttribute("data-car"));
+			for(var j=0; j<pics.length; j++){
+				if(pics[j].classList.contains(this.getAttribute("data-car"))){
+					pics[j].style.display = "block";
+				}
+				else{
+					pics[j].style.display = "none";
+				}
+			}
+		};
+	}
+	// document.getElementsByClassName("label-gallery").addEventListener("click", ()=>{
+           
+    //     if( getElementsByClassName)    
+            
+    //     });
+
+		
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
